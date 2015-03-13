@@ -1,0 +1,10 @@
+name: S.R.G. Balestra's site
+markdown: redcarpet
+pygments: true
+github: https://www.github.com/salrodgom
+about: I am an independent developer from the sunny UK. I dabble in Ruby, play in C and I'm an avid systems administrator.
+urls:
+    - text: github
+      url: https://github.com/salrodgom
+    - text: email
+      url: mailto:salrodgom@upo.es
