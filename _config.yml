@@ -31,3 +31,8 @@ redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
 exclude: ['README.md', 'LICENSE']
+
+title: Salvador Rodríguez-Gómez Balestra
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
