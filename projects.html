@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Projects &amp; Software | SRG Balestra</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ </head>
+ <body>
+
+ <!-- Navigation -->
+ <nav class="site-nav">
+  <div class="nav-inner">
+   <a href="index.html" class="nav-name">SRG Balestra</a>
+   <ul class="nav-links">
+    <li><a href="index.html" data-lang="en">Home</a><a href="index.html" data-lang="es">Inicio</a></li>
+    <li><a href="publications.html" data-lang="en">Publications</a><a href="publications.html" data-lang="es">Publicaciones</a></li>
+    <li><a href="projects.html" class="active" data-lang="en">Projects &amp; Software</a><a href="projects.html" class="active" data-lang="es">Proyectos y Software</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li>
+     <span class="lang-toggle">
+      <button class="lang-btn" data-set-lang="en">EN</button>
+      <button class="lang-btn" data-set-lang="es">ES</button>
+     </span>
+    </li>
+   </ul>
+  </div>
+ </nav>
+
+ <div class="site-wrapper">
+ <main>
+
+  <h1 data-lang="en">Projects &amp; Software</h1>
+  <h1 data-lang="es">Proyectos y Software</h1>
+
+  <!-- Software -->
+  <h2>Software</h2>
+
+  <div class="card-grid">
+
+   <div class="card">
+    <h3>RASPA3</h3>
+    <p data-lang="en">A Monte Carlo code for computing adsorption and diffusion in nanoporous materials and thermodynamic properties of fluids. Major rewrite of the RASPA simulation engine.</p>
+    <p data-lang="es">Código Monte Carlo para calcular adsorción y difusión en materiales nanoporosos y propiedades termodinámicas de fluidos. Reescritura completa del motor de simulación RASPA.</p>
+    <div class="card-links">
+     <a href="https://doi.org/10.1063/5.0226249"><img src="https://zenodo.org/badge/DOI/10.1063/5.0226249.svg" alt="DOI"></a>
+    </div>
+   </div>
+
+   <div class="card">
+    <h3>RUPTURA</h3>
+    <p data-lang="en">Simulation package to compute breakthrough curves and IAST mixture predictions. Developed in collaboration with TU Delft, UvA, TU/e, UPO and Shell.</p>
+    <p data-lang="es">Paquete de simulación para calcular curvas de ruptura y predicciones de mezclas IAST. Desarrollado en colaboración con TU Delft, UvA, TU/e, UPO y Shell.</p>
+    <div class="card-links">
+     <a href="https://github.com/iRASPA/RUPTURA" title="GitHub repo"><img src="https://img.shields.io/static/v1?label=iRASPA&message=RUPTURA&color=%23181717&logo=github" alt="RUPTURA"></a>
+     <a href="https://doi.org/10.1080/08927022.2023.2202757"><img src="https://zenodo.org/badge/DOI/10.1080/08927022.2023.2202757.svg" alt="DOI"></a>
+    </div>
+   </div>
+
+   <div class="card">
+    <h3>FLAMA</h3>
+    <p data-lang="en">Genetic-algorithm based fitting of interatomic potentials from DFT reference data. Uses GULP or LAMMPS as energy backend. Tested on perovskites PbCs(Br,I,Cl)₃ and Pb(MA,FA,Cs)(Br,I)₃.</p>
+    <p data-lang="es">Ajuste de potenciales interatómicos basado en algoritmos genéticos a partir de datos DFT de referencia. Usa GULP o LAMMPS como motor de energía. Probado en perovskitas PbCs(Br,I,Cl)₃ y Pb(MA,FA,Cs)(Br,I)₃.</p>
+    <div class="card-links">
+     <a href="https://github.com/salrodgom/flama" title="GitHub repo"><img src="https://img.shields.io/static/v1?label=salrodgom&message=FLAMA&color=%23181717&logo=github" alt="FLAMA"></a>
+     <a href="https://doi.org/10.5281/zenodo.5779853"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5779853.svg" alt="DOI"></a>
+    </div>
+   </div>
+
+   <div class="card">
+    <h3>GAIAST</h3>
+    <p data-lang="en">Genetic Algorithm IAST — predicts gas mixture loading using Ideal Adsorbed Solution Theory, based only on pure adsorption isotherms of individual components.</p>
+    <p data-lang="es">IAST con Algoritmo Genético — predice la carga de mezclas de gases mediante la Teoría de Solución Adsorbida Ideal, basándose solo en las isotermas de adsorción pura de los componentes individuales.</p>
+    <div class="card-links">
+     <a href="https://github.com/salrodgom/gaiast" title="GitHub repo"><img src="https://img.shields.io/static/v1?label=salrodgom&message=GAIAST&color=%23181717&logo=github" alt="GAIAST"></a>
+     <a href="https://doi.org/10.5281/zenodo.165844"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.165844.svg" alt="DOI"></a>
+    </div>
+   </div>
+
+   <div class="card">
+    <h3>MC/EM/MD</h3>
+    <p data-lang="en">Methodology for realistic structural modeling of zeolites in which large structural deformations occur, using Monte Carlo, Energy Minimisation, and Molecular Dynamics.</p>
+    <p data-lang="es">Metodología para el modelado estructural realista de zeolitas con grandes deformaciones estructurales, usando Monte Carlo, Minimización de Energía y Dinámica Molecular.</p>
+    <div class="card-links">
+     <a href="https://github.com/salrodgom/mcmd_gulp" title="GitHub repo"><img src="https://img.shields.io/static/v1?label=salrodgom&message=mcmd_gulp&color=%23181717&logo=github" alt="mcmd_gulp"></a>
+    </div>
+   </div>
+
+   <div class="card">
+    <h3>White Rabbit</h3>
+    <p data-lang="en">Code to quantify the degree of distortions of zeolite windows, used in the study of molecular valve zeolite RHO.</p>
+    <p data-lang="es">Código para cuantificar el grado de distorsión de las ventanas de zeolitas, utilizado en el estudio de la zeolita válvula molecular RHO.</p>
+    <div class="card-links">
+     <a href="https://github.com/salrodgom/white_rabbit" title="GitHub repo"><img src="https://img.shields.io/static/v1?label=salrodgom&message=WhiteRabbit&color=%23181717&logo=github" alt="WhiteRabbit"></a>
+     <a href="https://doi.org/10.5281/zenodo.5361665"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5361665.svg" alt="DOI"></a>
+    </div>
+   </div>
+
+   <div class="card">
+    <h3>Zeolite Analyser</h3>
+    <p data-lang="en">Tools for analysing structural features and stability of zeolites using a linearized equation approach.</p>
+    <p data-lang="es">Herramientas para analizar características estructurales y estabilidad de zeolitas mediante un enfoque de ecuación linealizada.</p>
+    <div class="card-links">
+     <a href="https://github.com/salrodgom/zeolite-analyser" title="GitHub repo"><img src="https://img.shields.io/static/v1?label=salrodgom&message=zeolite-analyser&color=%23181717&logo=github" alt="zeolite-analyser"></a>
+     <a href="https://doi.org/10.5281/zenodo.14775333"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.14775333.svg" alt="DOI"></a>
+    </div>
+   </div>
+
+   <div class="card">
+    <h3>CEGA</h3>
+    <p data-lang="en">Computational tool related to chiral stationary phase studies with TAMOF-1.</p>
+    <p data-lang="es">Herramienta computacional relacionada con estudios de fase estacionaria quiral con TAMOF-1.</p>
+    <div class="card-links">
+     <a href="https://github.com/salrodgom/CEGA" title="GitHub repo"><img src="https://img.shields.io/static/v1?label=salrodgom&message=CEGA&color=%23181717&logo=github" alt="CEGA"></a>
+    </div>
+   </div>
+
+  </div>
+
+  <!-- Supervision -->
+  <h2 data-lang="en">Supervision</h2>
+  <h2 data-lang="es">Dirección de trabajos</h2>
+
+  <ol>
+   <li>Francisca Aguilar Lineros (supervisor: Salvador Rodríguez Gómez),
+       <span data-lang="en"><em>Zeolitic Imidazolate Frameworks (ZIF) with mixed ligands for the study of thermal expansion in porous materials</em>, Master Project, M. Sc. in Molecular Simulation, Universidad Internacional de Andalucía, <strong>2019</strong></span>
+       <span data-lang="es"><em>Enrejados zeolíticos de Imidazol (ZIF) con ligandos mixtos para el estudio de la expansión térmica en materiales porosos</em>, Trabajo Fin de Máster, Máster Oficial en Simulación Molecular, Universidad Internacional de Andalucía, <strong>2019</strong></span>
+   </li>
+   <li>José Manuel González Montiel (supervisors: Salvador Rodríguez Gómez and Sofía Calero),
+       <em>Effect of Structural Flexibility on the Adsorption and Diffusion of CH4 and CO2 in ITQ-29 and ITQ-50 zeolites</em>,
+       <span data-lang="en">Final Degree Project in Environmental Science (Bc. Sc.), Pablo de Olavide University, <strong>2015</strong></span>
+       <span data-lang="es">Trabajo Fin de Grado en Ciencias Ambientales, Universidad Pablo de Olavide, <strong>2015</strong></span>
+   </li>
+  </ol>
+
+ </main>
+
+ <!-- Footer -->
+ <footer class="site-footer">
+  <p data-lang="en"><small>Funded by:</small></p>
+  <p data-lang="es"><small>Financiado por:</small></p>
+  <div class="funding-logos">
+   <img src="images/ERC_VALZEO.png" alt="ERC">
+   <img src="images/junta-aac.png" alt="Junta de Andalucía">
+   <img src="images/micin-aei.png" alt="MICIN-AEI">
+   <img src="images/mineco-aei.png" alt="MINECO-AEI">
+  </div>
+  <p><small>Hosted on GitHub</small></p>
+ </footer>
+
+ </div>
+ <script src="javascripts/lang.js"></script>
+ </body>
+</html>

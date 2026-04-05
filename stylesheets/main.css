@@ -1,0 +1,395 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #333;
+  background: #fafafa;
+}
+
+a {
+  color: #2a6496;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1a4060;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4 {
+  color: #222;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+h2 { font-size: 1.4rem; margin: 2rem 0 0.75rem; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; }
+h3 { font-size: 1.15rem; margin: 1.5rem 0 0.5rem; color: #444; }
+
+p, ul, ol {
+  margin-bottom: 1rem;
+}
+
+/* ===== Layout ===== */
+.site-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== Navigation ===== */
+.site-nav {
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-nav .nav-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.site-nav .nav-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #222;
+  text-decoration: none;
+}
+
+.site-nav .nav-name:hover {
+  text-decoration: none;
+  color: #2a6496;
+}
+
+.site-nav .nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.site-nav .nav-links a {
+  font-size: 0.9rem;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.site-nav .nav-links a:hover,
+.site-nav .nav-links a.active {
+  color: #2a6496;
+  border-bottom-color: #2a6496;
+  text-decoration: none;
+}
+
+/* ===== Header / Hero ===== */
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem 0 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.page-header .avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.header-info {
+  flex: 1;
+}
+
+.header-info .subtitle {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.academic-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.academic-links a img {
+  width: 1.8em;
+  height: 1.8em;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.academic-links a:hover img {
+  opacity: 1;
+}
+
+/* ===== Main Content ===== */
+main {
+  padding: 1.5rem 0 3rem;
+}
+
+/* ===== Section Cards (Projects) ===== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 1.25rem;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.card .card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.card .card-links a img {
+  height: 20px;
+}
+
+/* ===== Highlight Cards (index) ===== */
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.highlight-card {
+  background: #fff;
+  border-left: 3px solid #2a6496;
+  padding: 1rem 1.25rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.highlight-card .journal {
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.25rem;
+}
+
+.highlight-card .hl-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.25rem;
+}
+
+.highlight-card .hl-year {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* ===== Publications Page ===== */
+.pub-year {
+  font-size: 1.1rem;
+  color: #2a6496;
+  margin: 2rem 0 0.75rem;
+  font-weight: 600;
+}
+
+.pub-list {
+  list-style: none;
+  padding: 0;
+}
+
+.pub-list > li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.pub-list > li:last-child {
+  border-bottom: none;
+}
+
+.pub-list .pub-badges {
+  margin-top: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.pub-list .pub-badges img {
+  height: 20px;
+}
+
+.pub-list .pub-note {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.3rem;
+}
+
+.pub-cover {
+  max-width: 300px;
+  margin: 0.75rem 0;
+  border-radius: 4px;
+}
+
+/* ===== CV Page ===== */
+.cv-section {
+  margin-bottom: 2rem;
+}
+
+.cv-entry {
+  padding: 0.5rem 0;
+  border-left: 2px solid #ddd;
+  padding-left: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.cv-entry .cv-period {
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 600;
+}
+
+.cv-entry .cv-title {
+  font-weight: 600;
+  color: #222;
+}
+
+.cv-entry .cv-detail {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  border-top: 1px solid #e0e0e0;
+  padding: 1.5rem 0;
+  text-align: center;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.site-footer .funding-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.site-footer .funding-logos img {
+  height: 50px;
+  opacity: 0.7;
+}
+
+/* ===== Language Toggle ===== */
+.lang-toggle {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.lang-btn {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: #888;
+  border-radius: 3px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.lang-btn.active {
+  background: #2a6496;
+  color: #fff;
+  border-color: #2a6496;
+}
+
+.lang-btn:hover:not(.active) {
+  border-color: #2a6496;
+  color: #2a6496;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .page-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-header .avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .academic-links {
+    justify-content: center;
+  }
+
+  .site-nav .nav-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.2rem; }
+
+  .card-grid,
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+}
